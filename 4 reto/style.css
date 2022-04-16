@@ -1,0 +1,116 @@
+*{
+    padding:0; 
+    margin:0; 
+}
+body{
+    background-color: #f5d8b2;
+    box-sizing: border-box;
+}
+
+header{    
+    display: inline-block;
+    width: 98%;
+    margin:0px 1% 2px 1%;
+
+}
+#menu{
+    box-sizing: border-box;
+    font-size: 42px;
+    font-family: 'Square Peg', cursive;
+    font-weight: bolder;
+    float: right;
+    margin-right: 30px;
+}
+#logo{
+    float: left;
+    border:2px solid #4682b4;
+    padding:12px 80px;
+    margin-top: 10 px;
+}
+li{
+    display: inline-block;
+    padding:5px; 
+    margin:0 10px; 
+    transition: all .5s; 
+    text-decoration: none;
+    
+}
+li:hover{
+    background-color: #f5c2a2;
+    cursor:pointer;
+    color: #343; 
+}
+li{color: #343;}
+li:after,li:before{content:"";display:block;position:absolute;top:7%;left:100;width:1%;height:2px;background-color:#117075;transition:all .3s ease;transform:scale(0.85)}
+li:hover:before{top:7px;transform:scale(.8); }
+li:hover:after{transform:scale(.7)}
+
+
+section{ 
+    background-color: #fff;
+    margin:0 40px;
+    
+}
+section>div{
+    box-sizing: border-box;
+    display:inline-block;
+    width: 49%;
+   
+}
+#div1{
+    text-align: center;
+    float:left;
+    margin-left: 20px;
+    height: 605px;
+    border-right: 1px solid #2a4;
+}
+p{  
+    padding:100px 0 50px 0;
+    font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande';
+    font-weight: 800;
+    text-decoration:underline;
+}
+input
+{   background-color: #000;
+    color:#fef; 
+    font-size: 18px;
+    font-weight: 700;
+    padding:8px 50px;
+    margin-bottom:40px;
+    transition: all .7s;
+}
+input:hover{
+    background-color: #999;
+    color:#222;
+    cursor:pointer;
+}
+
+#img1{
+    box-sizing: border-box;
+    border:10px solid #343;
+    border-radius: 3px;
+    height: 300px;
+}
+#img2{
+    filter: saturate(2);
+    width: 600px;
+    height: 600px;
+    
+}
+
+
+
+footer{
+    border-top:2px solid #00f; 
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    position: absolute;
+    width: 100%;
+    padding:40px 0 20px 0;
+    background-color:#000;
+    color:#eee;
+}
