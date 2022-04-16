@@ -1,0 +1,73 @@
+*{
+    margin:0; 
+    padding:0; 
+    font-size:28px; 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+body{background-color: #000; color:#fff;}
+.bordes{
+    border: 3px solid #cdb;
+    border-radius:10px; 
+    box-sizing:border-box;
+    text-align: center;
+    margin:2px 1px; 
+    cursor:pointer; 
+}
+.bordes:hover{
+    background-color: #424 !important;
+}
+header{ 
+    padding:5px 0; 
+    border-radius: 30px !important;
+    margin:2px 1px 5px 1px;
+    background-color: #007070;
+}
+#nav1{
+    border-radius: 30px !important;
+    background-color: #400020;
+}
+#nav2{
+    float:left;
+    width: 20%;
+    height:590px ;
+    background-color: #400020;
+}
+p{display:block;}  /* 'p'  por defecto esta en bloque */
+
+#sect1{
+    text-align: left;
+    position:fixed;
+    display:inline-block;
+    height:290px;
+    width: 855px;
+}
+#sect2{
+    text-align: left;
+    position:fixed;
+    display: inline-block;
+    bottom:71px;
+    width: 855px;
+    height: 290px;
+}
+
+#artside{
+    display: inline-block;
+    padding:104px 160px;
+    margin:0px 10px;
+    background-color: #104001;
+}
+
+#aside1{
+    float:right;
+    width: 20%;
+    height:590px;
+    background-color: #400020;
+}
+
+footer{
+    position:fixed; 
+    bottom:2px;
+    padding:14px;
+    width: 100%;
+}
