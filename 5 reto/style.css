@@ -14,22 +14,24 @@ body{
     background-color: #ffefdf;
 }
 header{
-    background-color: #d408;
+    background: linear-gradient(40deg,#202000,#10600099, #444,#111); 
     position:fixed; 
     width: 100%;
     padding:10px 0;
     z-index: 100px;
+    border-bottom: 1px solid #291b38;
 }
 nav>div{display: inline-block;}
 .menu{ 
     float:right;
-    padding:3px 15px;
+    padding:3px 15px; 
 }
 a{
     text-decoration: none;
-    color:#000;
+    color:#bbf;
 }
-.menu>a:hover{ color:#404}
+.menu>a:hover{ color:#cef; 
+text-decoration: overline;}
 .menu:active{
     background-color: #c62;
 }
@@ -43,7 +45,7 @@ section{
 article{
     box-sizing: border-box;
     text-align: center;
-    /* border:2px solid #00f; */
+    border-bottom:1px solid #ffa;
     width: 100%;
     height: 100%;
 
@@ -58,6 +60,7 @@ article{
 #titulo>pre{
     text-decoration: underline;
     font-size: 30px !important;  
+    text-shadow: 2px 1px 0 #808000;
 }
 .textImg{
     display: inline-block;
@@ -76,6 +79,7 @@ article{
 }
 #texto>p{
     /* border:2px solid #ae2; */
+    text-shadow: 1px 1px 2px #2e8b57;
     width: 300px;
     margin:170px 70px 0 0;
     float:right;
@@ -94,24 +98,31 @@ article{
     width:80%;
     object-fit:contain;
     box-shadow: 0px 0px 20px 7px #74ab80 ;
+    border-radius: 10px;
     filter: saturate(100%) grayscale(5%) blur(0px);
 }
  
-footer{
+ footer{
     display:block;
     text-align: center;
-    background-color: #2299;
+    background: linear-gradient(40deg,#505000, #000); 
+    box-shadow: 0 5px 20px 20px #888;
+    filter:blur(.1px);
     width: 100%;
-    position: fied;
     bottom:0;
     padding:80px 0 30px 0;
+} 
+h5
+{ 
+    font-size: 30px;
+    color:#fff;
+    text-shadow: 3px 8px 5px #000;
 }
-
 
 
 /* esto es para el responsive */
 @media screen and (max-width:900px) {
     body{
-        background-color: #f00;
+        background-color: #faa;
     }
  }
