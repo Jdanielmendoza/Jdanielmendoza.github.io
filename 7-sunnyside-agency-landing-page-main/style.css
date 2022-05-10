@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@900&family=Fraunces:opsz,wght@9..144,600&display=swap');
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+*{
+    margin:0; 
+    padding:0;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Fraunces';    
+}
+body{
+    max-width: 550px;
+    margin:0 auto;
+}
+/* 
+.menu{
+    border:1px solid #f00;
+    position:absolute;
+    top:2px ;
+    right: 4px;
+} */
+.section0{
+    background-image: url(images/mobile/image-header.jpg);
+    background-size:100% 600px; 
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+    color:#fff;
+}
+header .title{
+    padding:20px 0 0 10px ;
+    font-size: 34px;
+    font-weight: 900;
+    text-shadow: 2px 0 #fff;
+}
+header>img{              /*icono hamburguesa*/
+    position:absolute;
+    width: 30px;
+    height: 25px;
+    top:30px; 
+    right:30px;
+}
+.flecha{
+    position: absolute;
+    width: 40px;
+    height: 140px;
+    margin:10px 48% ;
+    
+}
+
+
+.menu{
+    background-color: #fff;
+    display: inline-block;
+    max-width: 310px;
+    top:-400px;
+    right: 20px;
+    opacity: .5;
+    border-radius: 2px;
+    text-align: center;
+    position: absolute;
+
+    /*display: none;   /* desactivar luego */
+    transition: all 300ms;
+    
+}
+.menu-desplegar{
+    display: block; 
+    z-index: 20;
+    top:80px; 
+    opacity: .95;
+    transition: all 300ms;
+}
+
+.menu>div{
+    margin:5px auto; 
+    padding:15px 0;
+    font-size: 28px;
+    color:#666;
+    font-weight: 900;
+    width: 180px;
+    border-radius: 30px;
+}
+.menu>div:active{
+    background-color: #fe0;
+    color:#000;
+}
+.section0>h1{
+    font-size: 50px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+/*-- aqui va la segunda seccion de la pagina ------------- */
+
+.section1{
+    display: block;
+    height: 98vh;
+    text-align: center;
+}
+.section1 h3{
+    font-size: 40px;
+    padding:10px 30px;
+    text-shadow: 2px 0 #444;
+    color:#334;
+}
+.section1 p{
+    font-size: 20px; 
+    color:#667;
+    padding:20px 10px ;
+}
+.section1 button{
+    display: inline-block;
+    width: 140px;
+    border-style: none;
+    border-bottom: 4px solid #ff8 ;
+    background-color: #fff;
+    color: #444;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/*--------segunda seccion de la pagina----------*/
+
+.section2{
+    display: block;
+    height: 98vh;
+    text-align: center;
+}
+.section2 h3{
+    font-size: 40px;
+    padding:10px 30px;
+    text-shadow: 2px 0 #444;
+    color:#334;
+}
+.section2 p{
+    font-size: 20px; 
+    color:#667;
+    padding:20px 10px ;
+}
+.section2 button{
+    display: inline-block;
+    width: 140px;
+    border-style: none;
+    border-bottom: 4px solid #ff8 ;
+    background-color: #fff;
+    color: #444;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/*----------seccion 3 de la pagina ----------------*/
+
+.section3{
+    background-image: url(images/mobile/image-graphic-design.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+    color:#242;
+    text-align: center;
+}
+.section3 h3{
+    position: sticky;
+    font-size: 30px;
+    padding:10px 30px;
+    text-shadow: 1px 0 #242;
+    padding-top:100% ;
+}
+.section3 p{
+    padding:10px 30px;
+}
+
+.section4{
+    background-image: url(images/mobile/image-photography.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+    color:#256;
+    text-align: center;
+}
+.section4 h3{
+    position: sticky;
+    font-size: 30px;
+    padding:10px 30px;
+    text-shadow: 1px 0 #256;
+    padding-top:100% ;
+}
+.section4 p{
+    padding:10px 30px;
+}
+
+/*-----------  testimonios de clientes ---------------*/
+.client-testimonials{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 900;
+    color:#dac;
+    padding-top:40px;
+}
+
+.client1 img{
+    width: 100px;
+    border-radius: 50%;
+}
+.client1{
+    margin-top:30px;
+ 
+}
+.client1 p{
+    color:#445;
+    padding:0 38px;
+}
+.client1 .name-client{
+    color:#020;
+    font-size: 22px;
+    margin-top:20px;
+}
+.client1 .ocupacion{
+    font-size: 14px;
+    color:#88a;
+    margin:20px 0 40px 0; 
+}
+
+.client2 img{
+    width: 100px;
+    border-radius: 50%;
+}
+.client2{
+    margin-top:30px;
+    
+}
+.client2 p{
+    color:#445;
+    padding:0 38px;
+}
+.client2 .name{
+    color:#020;
+    font-size: 22px;
+    margin-top:20px;
+}
+.client2 .ocupacion{
+    font-size: 14px;
+    color:#88a;
+    margin:20px 0 40px 0; 
+}
+
+.client3 img{
+    width: 100px;
+    border-radius: 50%;
+}
+.client3{
+    margin-top:30px;
+    
+}
+.client3 p{
+    color:#445;
+    padding:0 38px;
+}
+.client3 .name{
+    color:#020;
+    font-size: 22px;
+    margin-top:20px;
+}
+.client3 .ocupacion{
+    font-size: 14px;
+    color:#88a;
+    margin:20px 0 40px 0; 
+}
+
+/*---------galeria------------------*/
+
+section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+/*------------footer-------------------*/
+
+footer{
+    background-color:  hsl(168, 34%, 41%);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7,40px);
+    grid-template-areas: 
+    'titulo  titulo    titulo'
+    'titulo  titulo    titulo'
+    'titulo  titulo    titulo'
+    'about   services  proyects'
+    'iconos  iconos    iconos'
+    'iconos  iconos    iconos'
+    'credito credito   credito';
+    text-align: center;
+} 
+.titulo{ 
+    grid-area: titulo;
+    font-size: 32px;
+    color:#242;
+    padding:40px  0 40px 0;
+}
+.about{  
+    grid-area: about;
+    color:#353;
+    font-size: 20px;
+}
+.services{
+    grid-area: services;
+    color:#353;
+    font-size: 20px;
+}
+.projects{
+    grid-area:proyects;
+    color:#353;
+    font-size: 20px;
+}
+.iconos{
+    grid-area: iconos;
+    padding:20px 0;
+}
+.iconos img{ width: 25px; margin:0 10px 0 10px ;}
+
+.creditos{grid-area: credito; font-size: 10px;}
