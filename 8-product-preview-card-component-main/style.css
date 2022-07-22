@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:ital,wght@0,500;1,700&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body{
+   /*  font-family: 'Fraunces', serif; */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    background-color: var(--Cream);
+}
+
+:root{  /* se declaran las variables a utilizar  */
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --very-dark-green: hsl(156,42%,18%);
+}
+*{
+    margin:0; 
+    padding:0; 
+    box-sizing: border-box;
+}
+
+.card{
+    width: 344px;
+    height: 612px;
+    border-radius: 12px;
+    overflow: hidden;   /* TODO TEXTO o imagen que sobresalga de mi card  
+                            este lo oculta o no lo muestra */
+    margin:68px auto; 
+    background-color: var(--White);
+}
+
+.card__first-section__image{
+    width: 100%;
+}
+
+.card__second-section__product{
+    color: var(--Dark-grayish-blue);
+    font-size: 1em;  /* toma el valor del font-size del body (14px) */
+    letter-spacing: 3px;
+    margin:18px 24px 8px ; 
+}
+
+.card__second-section__title{
+    font-family: 'Fraunces', serif;   
+    margin:0 24px 16px 24px; 
+    font-size: 2.2em;
+    color: var(--Very-dark-blue);
+    line-height: 34px; /* espacion entre linea y linea  */
+
+}
+
+.card__second-section__description{
+    margin:0 24px 44px 24px;
+    color: var(--Dark-grayish-blue);
+    font-size: 0.95em;
+    line-height: 22px; 
+}
+
+.card__secont-section__price{
+    display:flex; /* de columna a fila en linea  */
+    gap: 16px; /* separacion entre elementos */
+    align-items: center;
+    margin:0 24px 16px ; 
+}
+.card__second-section__discount{
+    font-family: 'Fraunces', serif;
+    font-size: 2.3em;
+    color:var(--Dark-cyan);
+}
+.card__second-section__value{
+    text-decoration: line-through;
+    color: var(--Dark-grayish-blue);
+}
+
+.card__second-section__button{
+    width: 296px;
+    height: 50px;
+    background-color: var(--Dark-cyan);
+    border:none; 
+    border-radius: 8px;
+    color:var(--White); 
+    font-size: 1.1em;
+    font-weight: 700;
+    display: block;  /* para la linea de abajo se centre */
+    margin:auto; 
+}
+
+.card__second-section__button:hover{
+    cursor:pointer; 
+    background-color: var(--very-dark-green);
+}
+.card__second-section__button__icon{
+    margin-right: 12px;
+}
+footer{
+    font-size: 14px;
+}
+/* -------------------- media queris  desktop design --------------------------- */
+@media (min-width:620px) {
+    .card{
+        width: 600px;
+        height: 450px;
+        display: flex;
+        margin:175px auto 75px; 
+
+    }
+    .card__first-section{
+        width: 300px;
+    }
+    .card__first-section__image{
+        content:url(images/image-product-desktop.jpg);  /* cambiamos la imagen */
+    }
+    .card__second-section{
+        width: 300px;  
+    }
+    .card__second-section__title{
+        margin: 32px 24px 16px 24px;
+    }
+    .card__second-section__description{
+        line-height: 24px;
+        margin-bottom: 24px;
+    }
+    .card__secont-section__price{
+        margin-bottom: 26px;
+    }
+    .card__second-section__button{
+        width: 240px;
+    }
+}
