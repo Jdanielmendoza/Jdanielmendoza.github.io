@@ -1,0 +1,101 @@
+*{
+    margin:0; 
+    padding:0; 
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.select{  /* 2 botones de la interfaz 1 */
+    width:300px;
+    height: 100px;
+    margin: 35px 0;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px #999;
+    border-style: none;
+}
+.select_link{
+    text-decoration: none;
+    color:#000; 
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/* --------------------------interfaz 2.1----------------------- */
+
+.containerAdd{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+form{
+    border : 1px solid #aaa;
+    padding: 70px 35px 
+}
+.data>input{
+    width: 300px;
+    font-size: 18px;
+    height: 45px;
+    padding:0 10px; 
+    margin: 20px 0;
+}
+.btnadd{
+    width: 300px;
+    font-size: 24px;
+    height: 45px;
+    margin-top : 40px;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #bbb;
+    color: #232;
+    padding: 5px 0; 
+}
+
+/* --------------------------------------table--------------------- */
+.containerlist{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 0 10px;
+}
+.btnsearch{
+    width: 100%;
+    max-width: 600px;
+    padding:17px;
+    font-size: 22px;
+    border-style: none;
+    border:1px solid #474;
+    box-shadow: 3px 3px 5px #aaa; 
+    margin:100px 0 60px 0; 
+}
+
+.table{
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+table,th , td {
+    border:1px solid #666; 
+    border-collapse: collapse;
+}
+th{
+    font-size: 20px;
+    background-color: #333;
+    color:#ddd;
+}
+th,td{
+    padding:15px ; 
+    font-size: 20px;
+}
