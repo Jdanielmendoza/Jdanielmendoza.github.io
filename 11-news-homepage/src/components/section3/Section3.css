@@ -1,0 +1,16 @@
+*{
+    margin:0; 
+    padding:0; 
+    box-sizing: border-box;
+}
+
+.section3{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width:800px) {
+    .section3{
+        flex-direction: row;
+    }
+}
