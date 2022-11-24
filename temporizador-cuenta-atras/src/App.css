@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Dark-desaturated-blue: hsl(236, 21%, 26%);
+  --Very-dark-blue: hsl(235, 16%, 14%);
+  --Very-dark-blue2: hsl(234, 17%, 12%);
+  
+  --Grayish_blue: hsl(237, 18%, 59%);
+  --Soft_red: #fb6087;
+}
+
+*{
+  font-family: 'Red Hat Text', sans-serif;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgb(25, 26, 36),rgb(32,30,43),rgb(35,29,43));
+}
+
+.titulo>p{
+  color:var(--White); 
+  font-size: 25px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  transform: translateY(-120px);
+  letter-spacing: 5px;
+  padding: 0 5px;
+}
+
+.container-background {
+  z-index: 0;
+  width: 100%;
+  height: auto;
+}
+
+.timer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+.img {
+  background-image: url("./images/pattern-hills.svg");
+  background-repeat: no-repeat;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 197px;
+  z-index: 100;
+}
+
+.Cont-stars {
+  width: 100%;
+  height: 90vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.stars {
+  width: 100%;
+  height: 90vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(./images/bg-stars.svg);
+  overflow: hidden;
+  animation: moveStars 15s infinite alternate linear;
+}
+
+@keyframes moveStars {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(100px, 130px);
+  }
+}
