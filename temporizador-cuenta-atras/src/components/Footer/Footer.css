@@ -25,28 +25,7 @@ footer{
     margin : 0 10px ; 
     border-radius: 2px;
 }
-.gitHub{
-    width: 55px;
-    height: 100%;
-    background-image: url(./images/icons8-github.svg);
-    transform: scale(1.35);
-    border-radius: 50%;
-    transition: all .5s;
-    position: relative;
-    margin: 0 20px
-}
-.gitHub:hover{
-    transform: scale(1.6);
-    background-color: #0000;
-}
-.gitHub>a{
-    position: absolute;
-    width: 40px;
-    height: 100%;
-    margin : 0 10px ; 
-    top:0 ;
-    left: 0;
-}
+
 
 .Instagram{
     background-image: url(./images/icon-instagram.svg);
