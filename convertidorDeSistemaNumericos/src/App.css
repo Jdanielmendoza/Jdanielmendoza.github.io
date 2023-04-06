@@ -1,0 +1,64 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f6f4f4;
+}
+
+input{
+  box-sizing: border-box;
+  width: 90%;
+  height: 40px;
+  font-size: 24px;
+  padding: 25px 20px;
+  margin: 10px 0;
+
+}
+
+/* Estilos para el menú acordeón */
+details {
+  border-radius: 10pxpx;
+  margin: 20px 0;
+  background-color: aliceblue;
+  box-shadow: 2px 2px 5px 2px #dddd;
+  width: 330px;
+  cursor: pointer;
+  padding: 25px 15px 25px 35px;
+}
+summary {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+details[open] summary{
+  margin-bottom: 10px;
+}
+
+ul{
+  list-style: none;
+}
+
+li{
+  padding: 15px 0;
+  margin: 5px;
+  font-size: 16px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #556;
+  cursor: pointer;
+  border-bottom: 1px solid #7789;
+}
+
+li:active{
+  color: rgb(4, 110, 75);
+}
